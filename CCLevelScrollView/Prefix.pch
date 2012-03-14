@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+#import "CCNode+helper.h"
+#endif
+
+#define kScreenSize [CCDirector sharedDirector].winSize
+#define kScreenCenter ccp([CCDirector sharedDirector].winSize.width/2,[CCDirector sharedDirector].winSize.height/2)
+
+#define k_768_d_320   2.4f // iPad to iPhone width = 768/320
+#define k_1024_d_480  2.1333f // iPad to iPhone height = 1024/480
+#define CGSize_iPhone(w,h)  ( (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? CGSizeMake ((w) * k_768_d_320, (h) * k_1024_d_480) : CGSizeMake(w,h) )
+#define CGPoint_iPhone(x,y) ( (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? CGPointMake((x) * k_768_d_320, (y) * k_1024_d_480) : CGPointMake(x,y) )
+#define pointX_iPhone(x)  ( (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? (x) * k_768_d_320  : x )
+#define pointY_iPhone(y)  ( (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? (y) * k_1024_d_480 : y )
