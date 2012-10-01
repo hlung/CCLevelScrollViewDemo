@@ -131,7 +131,6 @@
 		E060CBF815109DD500173D06 /* LevelSelect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E060CBF215109DD500173D06 /* LevelSelect.mm */; };
 		E060CBF915109DD500173D06 /* LevelTile.mm in Sources */ = {isa = PBXBuildFile; fileRef = E060CBF415109DD500173D06 /* LevelTile.mm */; };
 		E060CBFA15109DD500173D06 /* pagedot.png in Resources */ = {isa = PBXBuildFile; fileRef = E060CBF515109DD500173D06 /* pagedot.png */; };
-		E060CBFB15109DD500173D06 /* README in Resources */ = {isa = PBXBuildFile; fileRef = E060CBF615109DD500173D06 /* README */; };
 		E060CC0815109F4F00173D06 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E060CC0315109F4F00173D06 /* leftArrow.png */; };
 		E060CC0915109F4F00173D06 /* levelTileBox.png in Resources */ = {isa = PBXBuildFile; fileRef = E060CC0415109F4F00173D06 /* levelTileBox.png */; };
 		E060CC0A15109F4F00173D06 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E060CC0515109F4F00173D06 /* rightArrow.png */; };
@@ -400,7 +399,6 @@
 		E060CBF315109DD500173D06 /* LevelTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelTile.h; sourceTree = "<group>"; };
 		E060CBF415109DD500173D06 /* LevelTile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelTile.mm; sourceTree = "<group>"; };
 		E060CBF515109DD500173D06 /* pagedot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pagedot.png; sourceTree = "<group>"; };
-		E060CBF615109DD500173D06 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		E060CC0015109EB300173D06 /* CCNode+helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCNode+helper.h"; sourceTree = "<group>"; };
 		E060CC0115109EB300173D06 /* CCNode+helper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "CCNode+helper.mm"; sourceTree = "<group>"; };
 		E060CC0315109F4F00173D06 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArrow.png; sourceTree = "<group>"; };
@@ -844,7 +842,6 @@
 				E060CBF315109DD500173D06 /* LevelTile.h */,
 				E060CBF415109DD500173D06 /* LevelTile.mm */,
 				E060CBF515109DD500173D06 /* pagedot.png */,
-				E060CBF615109DD500173D06 /* README */,
 				E060CC0015109EB300173D06 /* CCNode+helper.h */,
 				E060CC0115109EB300173D06 /* CCNode+helper.mm */,
 			);
@@ -926,7 +923,6 @@
 				E060CA8515109CEA00173D06 /* iTunesArtwork in Resources */,
 				E060CBBB15109CEC00173D06 /* ChangeLog in Resources */,
 				E060CBFA15109DD500173D06 /* pagedot.png in Resources */,
-				E060CBFB15109DD500173D06 /* README in Resources */,
 				E060CC0815109F4F00173D06 /* leftArrow.png in Resources */,
 				E060CC0915109F4F00173D06 /* levelTileBox.png in Resources */,
 				E060CC0A15109F4F00173D06 /* rightArrow.png in Resources */,
@@ -1095,6 +1091,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1114,6 +1112,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CCLevelScrollView/Prefix.pch;
@@ -1148,6 +1148,7 @@
 				E060CBE515109CED00173D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

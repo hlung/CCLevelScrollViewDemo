@@ -132,7 +132,7 @@ enum
 		{
 			CGFloat pX = 0.5f * self.contentSize.width + d * ( (CGFloat)i - 0.5f*(n-1.0f) );
             
-            CCSprite *dot = [CCSprite spriteWithFile:@"pageDot.png"];
+            CCSprite *dot = [CCSprite spriteWithFile:@"pagedot.png"];
             dot.size = dotSize;
             dot.position = ccp(pX, 5);
             [overlayLayer addChild:dot];
