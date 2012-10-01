@@ -1,8 +1,11 @@
 
 CCLevelScrollViewDemo
 
-Copyright 2012 Thongchai Kolyutsakul.
-Created by Thongchai on 3/12/12.
+Created by Thongchai Kolyutsakul on 3/12/12.
+
+Grid Aligned level select screen. Each grid has 3 stars indicator and score label. Arrows to move between pages.
+![LevelSelect Stage1](https://github.com/hlung/CCLevelScrollViewDemo/blob/master/screenshots/levelselect_ss1.png)
+![LevelSelect Stage1](https://github.com/hlung/CCLevelScrollViewDemo/blob/master/screenshots/levelselect_ss2.png)
 
 This is a Modified version of CCScrollLayer of Giv Parvaneh, Stepan Generalov. My work is implemented on top of theirs.
 Please note CCScrollLayer (the original work) is now a part of cocos2d-iphone-extensions repo:
